@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream - Made by Sahil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Live Stream</h1>
+            <p>Created by Sahil</p>
+        </div>
+        <div class="telegram-link">
+            <a href="https://t.me/yourchannel" target="_blank" title="Join our Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="countdown-container" class="countdown-container">
+            <h2>Stream Starts In:</h2>
+            <div id="countdown" class="countdown">
+                <div><span id="hours">00</span><span>Hours</span></div>
+                <div><span id="minutes">00</span><span>Minutes</span></div>
+                <div><span id="seconds">00</span><span>Seconds</span></div>
+            </div>
+            <p class="stream-time">Today at 7:30 PM</p>
+        </div>
+
+        <div id="video-container" class="video-container" style="display: none;">
+            <div class="watermark">© Sahil</div>
+            <video id="video" controls></video>
+        </div>
+
+        <div class="error-report">
+    <button id="report-btn">Report Issue</button>
+    <form id="error-form" class="error-form" style="display: none;" 
+          action="https://formsubmit.co/sahilchoudhary1655852@gmail.com" method="POST">
+        <!-- FormSubmit required fields -->
+        <input type="hidden" name="_subject" value="Stream Error Report">
+        <input type="hidden" name="_next" value="/thank-you.html">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <textarea name="message" id="error-message" placeholder="Describe the issue..." required></textarea>
+        <button type="submit" id="submit-error">Submit Report</button>
+    </form>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by <a href="#">Sahil</a> | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
